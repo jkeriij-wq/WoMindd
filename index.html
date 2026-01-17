@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMIND // EVOLUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Unbounded:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grain"></div>
+
+    <nav class="nav-bar">
+        <div class="nav-logo">WOMIND.OS</div>
+        <div class="nav-links">
+            <a href="#about">О НАС</a>
+            <a href="#lab">ТЕСТЫ</a>
+            <a href="#tariffs">ПРОГРАММЫ</a>
+            <a href="#form">КОНТАКТ</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="main-title" id="typewriter">WOMIND // EVOLUTION</h1>
+            <p class="hero-tagline" data-aos="fade-up">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
+            <button class="btn-main" onclick="document.getElementById('lab').scrollIntoView({behavior: 'smooth'})">НАЧАТЬ СКАНИРОВАНИЕ</button>
+        </div>
+    </header>
+
+    <section id="about" class="section manifesto-section">
+        <div class="manifesto-container">
+            <div class="manifesto-visual" data-aos="zoom-in">
+                <div class="circle-text-wrapper">
+                    <div class="rotating-ring">
+                        <svg viewBox="0 0 100 100" width="300" height="300">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+                            <text font-family="Unbounded" font-size="6.5" fill="#ff0000">
+                                <textPath xlink:href="#circlePath">ESTETICS • NEURO • MARKETING • STRATEGY •</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="strategy-badge">STRATEGY</div>
+                </div>
+                <div class="manifesto-images">
+                    <img src="IMG_9895 2.jpg" class="img-olya" alt="Olya">
+                    <img src="IMG_9892 2.jpg" class="img-mari" alt="Mari">
+                </div>
+            </div>
+            <div class="manifesto-content" data-aos="fade-left">
+                <span class="sub-label">// DNA MANIFESTO</span>
+                <h2 class="huge-title">МЫ — <br><span class="outline-text">WOMIND</span></h2>
+                <p class="manifesto-text">Мы объединили холодный расчет маркетинга и нейрофизиологию. Мы меняем ветку вероятности в твоей голове.</p>
+                <span class="red-accent-text">MARKETING & PSYCHOLOGY SYNERGY</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="lab" class="section">
+        <h2 class="section-title center" data-aos="fade-up">MIND LAB</h2>
+        <div class="grid-3">
+            <div class="card test-card" onclick="openQuiz('archetype')">
+                <div class="card-header">MOD_01</div>
+                <h3>NEURO-CODE</h3>
+                <div class="card-btn">ЗАПУСТИТЬ</div>
+            </div>
+            <div class="card test-card featured" onclick="openQuiz('money')">
+                <div class="card-header">MOD_02</div>
+                <h3>MONEY-MIND</h3>
+                <div class="card-btn">ЗАПУСТИТЬ</div>
+            </div>
+            <div class="card test-card" onclick="openQuiz('brand')">
+                <div class="card-header">MOD_03</div>
+                <h3>BRAND-SCAN</h3>
+                <div class="card-btn">ЗАПУСТИТЬ</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tariffs" class="section">
+        <h2 class="section-title center">ПРОГРАММЫ</h2>
+        <div class="grid-3">
+            <div class="card price-card">
+                <div class="card-header">INDIVIDUAL</div>
+                <h4>W-Individual</h4>
+                <div class="price">3888 ₪</div>
+                <button class="btn-outline" onclick="document.getElementById('form').scrollIntoView()">ВЫБРАТЬ</button>
+            </div>
+            <div class="card price-card highlight">
+                <div class="badge">Bestseller</div>
+                <div class="card-header">EVOLUTION</div>
+                <h4>W-Team</h4>
+                <div class="price">444 ₪</div>
+                <button class="btn-red-action" onclick="document.getElementById('form').scrollIntoView()">ВСТУПИТЬ</button>
+            </div>
+            <div class="card price-card">
+                <div class="card-header">LIVE</div>
+                <h4>WIN-Салфетка</h4>
+                <div class="price">LIVE</div>
+                <button class="btn-outline" onclick="document.getElementById('form').scrollIntoView()">УЗНАТЬ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="section form-dark-section">
+        <div class="form-bg-text">READY FOR <span class="red-text">MORE?</span></div>
+        <div class="form-container">
+            <div class="form-header-main">
+                <span class="sub-label-red">// APPLICATION FORM</span>
+                <h2 class="form-title-heavy">СТАТЬ <br> <span class="outline-text-white">ЧАСТЬЮ</span></h2>
+            </div>
+            <form class="minimal-form" id="google-sheet-form">
+                <div class="input-field">
+                    <input type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="contact" placeholder="@TELEGRAM / INSTAGRAM" required>
+                </div>
+                <button type="submit" class="submit-circle-btn" id="submit-btn">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-box">
+            <span class="close-modal" onclick="closeQuiz()">&times;</span>
+            <div id="quiz-content"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="quiz-data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
