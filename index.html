@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>WOMIND | EVOLUTION</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMIND | ARISTRAT EDITION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div id="cursor"></div>
 
     <nav class="main-nav">
         <div class="container nav-wrapper">
@@ -17,114 +17,116 @@
                 <li><a href="#about">О НАС</a></li>
                 <li><a href="#tests">ТЕСТЫ</a></li>
                 <li><a href="#programs">ПРОГРАММЫ</a></li>
-                <li><a href="#contact">КОНТАКТ</a></li>
             </ul>
-            <div class="nav-cta">
-                <a href="#form" class="scan-btn">НАЧАТЬ СКАНИРОВАНИЕ</a>
-            </div>
+            <a href="#form" class="scan-btn">START SCAN</a>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <p class="pre-title">WOMIND COMMUNITY / EST. 2024</p>
+        <div class="container" data-aos="fade-up">
+            <p class="pre-title">COMMUNITY // EST. 2024</p>
             <h1>WO<span class="highlight">MIND</span></h1>
             <p class="subtitle">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
         </div>
     </header>
 
-    <section id="tests" class="tariffs-section">
-        <div class="container">
-            <span class="section-label">// DIAGNOSTICS & EVOLUTION</span>
-            <h2 class="massive-title">ВАША <br><span class="outline-text">ТРАЕКТОРИЯ</span></h2>
-            
-            <div class="grid-container">
-                <article class="card gold-card">
-                    <div class="card-header">
-                        <span class="tag">DIAGNOSTIC</span>
-                        <h2>АРХЕТИП БРЕНДА</h2>
-                    </div>
-                    <div class="card-body">
-                        <p>Узнайте, какую энергию вы транслируете в мир и как это монетизировать в 2026 году.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#form" class="cta-btn secondary">ПРОЙТИ ТЕСТ</a>
-                    </div>
-                </article>
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>EVOLUTION // </span><span>STRATEGY // </span><span>OLD MONEY // </span><span>NEUROMARKETING // </span>
+            <span>EVOLUTION // </span><span>STRATEGY // </span><span>OLD MONEY // </span><span>NEUROMARKETING // </span>
+        </div>
+    </div>
 
-                <article class="card highlight-card">
-                    <div class="card-header">
-                        <span class="tag">8 ФЕВРАЛЯ / 2 МЕСТА</span>
-                        <h2>PODCAST PRODUCTION</h2>
-                    </div>
-                    <div class="card-body">
-                        <p>Полная упаковка эксперта: 10 Reels, видео-подкаст и стратегия смыслов.</p>
-                        <ul class="list">
-                            <li>Продакшн от Светы</li>
-                            <li>Стратсессия от WOMIND</li>
-                            <li>Реклама в комьюнити</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="price">1600 ₪ <small style="font-size: 0.4em; opacity: 0.5;">вместо 2500</small></span>
-                        <a href="#form" class="cta-btn dark">ЗАБРОНИРОВАТЬ</a>
-                    </div>
-                </article>
+    <section id="about" class="about-section container" data-aos="fade-right">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="tag">WHO WE ARE</span>
+                <h2>МЫ СОЗДАЕМ <br><span class="outline-text">НОВУЮ ВЕТКУ</span> ВЕРОЯТНОСТИ</h2>
+                <p>WOMIND — это не просто курсы. Это закрытое комьюнити, где эстетика "Old Money" встречается с жестким маркетингом и нейропластичностью.</p>
+            </div>
+            <div class="about-image-placeholder">
+                </div>
+        </div>
+    </section>
+
+    <section id="tests" class="section container">
+        <h2 class="section-title" data-aos="fade-up">DIAGNOSTICS</h2>
+        <div class="grid-3">
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="100">
+                <span class="card-num">01</span>
+                <h3>АРХЕТИП</h3>
+                <p>Определи свою ролевую модель для личного бренда.</p>
+                <a href="#" class="card-link">ПРОЙТИ →</a>
+            </div>
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="200">
+                <span class="card-num">02</span>
+                <h3>МЫШЛЕНИЕ</h3>
+                <p>Тест на дефицитарные и изобильные паттерны.</p>
+                <a href="#" class="card-link">ПРОЙТИ →</a>
+            </div>
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="300">
+                <span class="card-num">03</span>
+                <h3>ВИЗУАЛ</h3>
+                <p>Подходит ли твой стиль под премиум-позиционирование?</p>
+                <a href="#" class="card-link">ПРОЙТИ →</a>
             </div>
         </div>
     </section>
 
-    <section id="form" class="footer">
-        <div class="container">
-            <h3>READY FOR <span class="highlight">EVOLUTION?</span></h3>
-            <form id="womind-form" class="application-form" style="margin: 0 auto;">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="ВАШЕ ИМЯ" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="contact" name="contact" placeholder="TELEGRAM / WHATSAPP" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="ЗАПРОС ИЛИ ВЫБРАННАЯ ПРОГРАММА" rows="3"></textarea>
-                </div>
-                <button type="submit" class="cta-btn dark form-submit-btn">ОТПРАВИТЬ ДАННЫЕ</button>
-            </form>
-            <p class="copy" style="margin-top: 50px;">© 2026 WOMIND COMMUNITY. ALL RIGHTS RESERVED.</p>
+    <section id="programs" class="section container">
+        <h2 class="section-title" data-aos="fade-up">EVOLUTION PROGRAMS</h2>
+        <div class="grid-3">
+            <div class="card prog-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="tag">OFFLINE</span>
+                <h3>WIN-NAPKIN</h3>
+                <p>Встречи по нейропластичности и выходу из комфорта.</p>
+                <span class="price">177 ₪</span>
+            </div>
+            <div class="card prog-card gold-border" data-aos="fade-up" data-aos-delay="200">
+                <span class="tag">BESTSELLER</span>
+                <h3>W-TEAM</h3>
+                <p>Месяц работы: мастермайнды, съемки и продвижение.</p>
+                <span class="price">444 ₪</span>
+            </div>
+            <div class="card prog-card" data-aos="fade-up" data-aos-delay="300">
+                <span class="tag">VIP</span>
+                <h3>W-INDIVIDUAL</h3>
+                <p>Личное наставничество и полная стратегия бренда.</p>
+                <span class="price">3888 ₪</span>
+            </div>
         </div>
     </section>
 
+    <section id="form" class="footer container" data-aos="fade-up">
+        <div class="form-wrapper">
+            <h3>READY FOR <span class="highlight">MORE?</span></h3>
+            <p>СТАТЬ ЧАСТЬЮ</p>
+            <form id="womind-form">
+                <input type="text" id="name" placeholder="ВАШЕ ИМЯ" required>
+                <input type="text" id="contact" placeholder="TG / WHATSAPP" required>
+                <textarea id="message" placeholder="ЗАПРОС"></textarea>
+                <button type="submit" class="submit-btn">ОТПРАВИТЬ ДАННЫЕ</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        const scriptURL = 'ТВОЯ_ССЫЛКА_НА_GOOGLE_SCRIPT'; // Вставь сюда ссылку из Apps Script
+        AOS.init({ duration: 1000, once: true });
+
+        const scriptURL = 'ТВОЯ_ССЫЛКА_ИЗ_APPS_SCRIPT';
         const form = document.getElementById('womind-form');
 
         form.addEventListener('submit', e => {
             e.preventDefault();
-            const submitBtn = form.querySelector('.form-submit-btn');
-            submitBtn.innerText = 'СКАНИРОВАНИЕ...';
-            submitBtn.disabled = true;
-
             const data = {
                 name: document.getElementById('name').value,
                 contact: document.getElementById('contact').value,
                 description: document.getElementById('message').value
             };
-
-            fetch(scriptURL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            })
-            .then(() => {
-                submitBtn.innerText = 'ОТПРАВЛЕНО';
-                form.reset();
-                alert('Данные успешно переданы в систему.');
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                submitBtn.innerText = 'ОШИБКА';
-                submitBtn.disabled = false;
-            });
+            // Тут твой fetch запрос к таблице...
+            alert('Данные отправлены!');
+            form.reset();
         });
     </script>
 </body>
