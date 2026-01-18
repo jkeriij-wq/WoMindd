@@ -2,135 +2,130 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOMIND // EVOLUTION</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Unbounded:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WOMIND | EVOLUTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grain"></div>
+    <div id="cursor"></div>
 
-    <nav class="nav-bar">
-        <div class="nav-logo">WOMIND.OS</div>
-        <div class="nav-links">
-            <a href="#about">О НАС</a>
-            <a href="#lab">ТЕСТЫ</a>
-            <a href="#tariffs">ПРОГРАММЫ</a>
-            <a href="#form">КОНТАКТ</a>
+    <nav class="main-nav">
+        <div class="container nav-wrapper">
+            <div class="nav-logo">WOMIND.OS</div>
+            <ul class="nav-links">
+                <li><a href="#about">О НАС</a></li>
+                <li><a href="#tests">ТЕСТЫ</a></li>
+                <li><a href="#programs">ПРОГРАММЫ</a></li>
+                <li><a href="#contact">КОНТАКТ</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#form" class="scan-btn">НАЧАТЬ СКАНИРОВАНИЕ</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1 class="main-title" id="typewriter">WOMIND // EVOLUTION</h1>
-            <p class="hero-tagline" data-aos="fade-up">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
-            <button class="btn-main" onclick="document.getElementById('lab').scrollIntoView({behavior: 'smooth'})">НАЧАТЬ СКАНИРОВАНИЕ</button>
+        <div class="container">
+            <p class="pre-title">WOMIND COMMUNITY / EST. 2024</p>
+            <h1>WO<span class="highlight">MIND</span></h1>
+            <p class="subtitle">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
         </div>
     </header>
 
-    <section id="about" class="section manifesto-section">
-        <div class="manifesto-container">
-            <div class="manifesto-visual" data-aos="zoom-in">
-                <div class="circle-text-wrapper">
-                    <div class="rotating-ring">
-                        <svg viewBox="0 0 100 100" width="300" height="300">
-                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
-                            <text font-family="Unbounded" font-size="6.5" fill="#ff0000">
-                                <textPath xlink:href="#circlePath">ESTETICS • NEURO • MARKETING • STRATEGY •</textPath>
-                            </text>
-                        </svg>
+    <section id="tests" class="tariffs-section">
+        <div class="container">
+            <span class="section-label">// DIAGNOSTICS & EVOLUTION</span>
+            <h2 class="massive-title">ВАША <br><span class="outline-text">ТРАЕКТОРИЯ</span></h2>
+            
+            <div class="grid-container">
+                <article class="card gold-card">
+                    <div class="card-header">
+                        <span class="tag">DIAGNOSTIC</span>
+                        <h2>АРХЕТИП БРЕНДА</h2>
                     </div>
-                    <div class="strategy-badge">STRATEGY</div>
-                </div>
-                <div class="manifesto-images">
-                    <img src="IMG_9895 2.jpg" class="img-olya" alt="Olya">
-                    <img src="IMG_9892 2.jpg" class="img-mari" alt="Mari">
-                </div>
-            </div>
-            <div class="manifesto-content" data-aos="fade-left">
-                <span class="sub-label">// DNA MANIFESTO</span>
-                <h2 class="huge-title">МЫ — <br><span class="outline-text">WOMIND</span></h2>
-                <p class="manifesto-text">Мы объединили холодный расчет маркетинга и нейрофизиологию. Мы меняем ветку вероятности в твоей голове.</p>
-                <span class="red-accent-text">MARKETING & PSYCHOLOGY SYNERGY</span>
+                    <div class="card-body">
+                        <p>Узнайте, какую энергию вы транслируете в мир и как это монетизировать в 2026 году.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#form" class="cta-btn secondary">ПРОЙТИ ТЕСТ</a>
+                    </div>
+                </article>
+
+                <article class="card highlight-card">
+                    <div class="card-header">
+                        <span class="tag">8 ФЕВРАЛЯ / 2 МЕСТА</span>
+                        <h2>PODCAST PRODUCTION</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Полная упаковка эксперта: 10 Reels, видео-подкаст и стратегия смыслов.</p>
+                        <ul class="list">
+                            <li>Продакшн от Светы</li>
+                            <li>Стратсессия от WOMIND</li>
+                            <li>Реклама в комьюнити</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">1600 ₪ <small style="font-size: 0.4em; opacity: 0.5;">вместо 2500</small></span>
+                        <a href="#form" class="cta-btn dark">ЗАБРОНИРОВАТЬ</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="lab" class="section">
-        <h2 class="section-title center" data-aos="fade-up">MIND LAB</h2>
-        <div class="grid-3">
-            <div class="card test-card" onclick="openQuiz('archetype')">
-                <div class="card-header">MOD_01</div>
-                <h3>NEURO-CODE</h3>
-                <div class="card-btn">ЗАПУСТИТЬ</div>
-            </div>
-            <div class="card test-card featured" onclick="openQuiz('money')">
-                <div class="card-header">MOD_02</div>
-                <h3>MONEY-MIND</h3>
-                <div class="card-btn">ЗАПУСТИТЬ</div>
-            </div>
-            <div class="card test-card" onclick="openQuiz('brand')">
-                <div class="card-header">MOD_03</div>
-                <h3>BRAND-SCAN</h3>
-                <div class="card-btn">ЗАПУСТИТЬ</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tariffs" class="section">
-        <h2 class="section-title center">ПРОГРАММЫ</h2>
-        <div class="grid-3">
-            <div class="card price-card">
-                <div class="card-header">INDIVIDUAL</div>
-                <h4>W-Individual</h4>
-                <div class="price">3888 ₪</div>
-                <button class="btn-outline" onclick="document.getElementById('form').scrollIntoView()">ВЫБРАТЬ</button>
-            </div>
-            <div class="card price-card highlight">
-                <div class="badge">Bestseller</div>
-                <div class="card-header">EVOLUTION</div>
-                <h4>W-Team</h4>
-                <div class="price">444 ₪</div>
-                <button class="btn-red-action" onclick="document.getElementById('form').scrollIntoView()">ВСТУПИТЬ</button>
-            </div>
-            <div class="card price-card">
-                <div class="card-header">LIVE</div>
-                <h4>WIN-Салфетка</h4>
-                <div class="price">LIVE</div>
-                <button class="btn-outline" onclick="document.getElementById('form').scrollIntoView()">УЗНАТЬ</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="form" class="section form-dark-section">
-        <div class="form-bg-text">READY FOR <span class="red-text">MORE?</span></div>
-        <div class="form-container">
-            <div class="form-header-main">
-                <span class="sub-label-red">// APPLICATION FORM</span>
-                <h2 class="form-title-heavy">СТАТЬ <br> <span class="outline-text-white">ЧАСТЬЮ</span></h2>
-            </div>
-            <form class="minimal-form" id="google-sheet-form">
-                <div class="input-field">
-                    <input type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
+    <section id="form" class="footer">
+        <div class="container">
+            <h3>READY FOR <span class="highlight">EVOLUTION?</span></h3>
+            <form id="womind-form" class="application-form" style="margin: 0 auto;">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="ВАШЕ ИМЯ" required>
                 </div>
-                <div class="input-field">
-                    <input type="text" name="contact" placeholder="@TELEGRAM / INSTAGRAM" required>
+                <div class="form-group">
+                    <input type="text" id="contact" name="contact" placeholder="TELEGRAM / WHATSAPP" required>
                 </div>
-                <button type="submit" class="submit-circle-btn" id="submit-btn">ОТПРАВИТЬ</button>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="ЗАПРОС ИЛИ ВЫБРАННАЯ ПРОГРАММА" rows="3"></textarea>
+                </div>
+                <button type="submit" class="cta-btn dark form-submit-btn">ОТПРАВИТЬ ДАННЫЕ</button>
             </form>
+            <p class="copy" style="margin-top: 50px;">© 2026 WOMIND COMMUNITY. ALL RIGHTS RESERVED.</p>
         </div>
     </section>
 
-    <div id="quiz-modal" class="modal">
-        <div class="modal-box">
-            <span class="close-modal" onclick="closeQuiz()">&times;</span>
-            <div id="quiz-content"></div>
-        </div>
-    </div>
+    <script>
+        const scriptURL = 'ТВОЯ_ССЫЛКА_НА_GOOGLE_SCRIPT'; // Вставь сюда ссылку из Apps Script
+        const form = document.getElementById('womind-form');
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="quiz-data.js"></script>
-    <script src="main.js"></script>
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const submitBtn = form.querySelector('.form-submit-btn');
+            submitBtn.innerText = 'СКАНИРОВАНИЕ...';
+            submitBtn.disabled = true;
+
+            const data = {
+                name: document.getElementById('name').value,
+                contact: document.getElementById('contact').value,
+                description: document.getElementById('message').value
+            };
+
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                submitBtn.innerText = 'ОТПРАВЛЕНО';
+                form.reset();
+                alert('Данные успешно переданы в систему.');
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                submitBtn.innerText = 'ОШИБКА';
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
 </body>
 </html>
