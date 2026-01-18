@@ -23,17 +23,17 @@
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <p class="pre-title" data-aos="fade-down">COMMUNITY // EST. 2024</p>
-            <h1 id="typewriter"></h1> 
-            <p class="subtitle" data-aos="fade-up" data-aos-delay="600">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
+        <div class="container" data-aos="fade-up">
+            <p class="pre-title">COMMUNITY // EST. 2024</p>
+            <h1 id="typewriter"></h1>
+            <p class="subtitle">МАРКЕТИНГОВАЯ ЭКОСИСТЕМА БУДУЩЕГО</p>
         </div>
     </header>
 
     <div class="marquee">
         <div class="marquee-content">
-            <span>EVOLUTION // </span><span>STRATEGY // </span><span>OLD MONEY // </span><span>NEUROMARKETING // </span>
-            <span>EVOLUTION // </span><span>STRATEGY // </span><span>OLD MONEY // </span><span>NEUROMARKETING // </span>
+            <span>EVOLUTION // STRATEGY // OLD MONEY // NEUROMARKETING // </span>
+            <span>EVOLUTION // STRATEGY // OLD MONEY // NEUROMARKETING // </span>
         </div>
     </div>
 
@@ -44,13 +44,9 @@
                 <h2>МЫ СОЗДАЕМ <br><span class="outline-text">НОВУЮ ВЕТКУ</span> ВЕРОЯТНОСТИ</h2>
                 <p>WOMIND — это не просто курсы. Это закрытое комьюнити, где эстетика "Old Money" встречается с жестким маркетингом и нейропластичностью.</p>
             </div>
-            <div class="about-photos">
-                <div class="photo-wrapper p1" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop" alt="Old Money Style 1">
-                </div>
-                <div class="photo-wrapper p2" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://images.unsplash.com/photo-1495364141860-b0d036d085b5?q=80&w=1000&auto=format&fit=crop" alt="Old Money Style 2">
-                </div>
+            <div class="about-photos" data-aos="fade-left">
+                <div class="photo-one"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600" alt="About 1"></div>
+                <div class="photo-two"><img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=600" alt="About 2"></div>
             </div>
         </div>
     </section>
@@ -58,23 +54,23 @@
     <section id="tests" class="section container">
         <h2 class="section-title" data-aos="fade-up">DIAGNOSTICS</h2>
         <div class="grid-3">
-            <div class="card test-card" data-aos="fade-up" data-aos-delay="100" onclick="openQuiz('archetype')">
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="100">
                 <span class="card-num">01</span>
                 <h3>АРХЕТИП</h3>
                 <p>Определи свою ролевую модель для личного бренда.</p>
-                <span class="card-link">ПРОЙТИ →</span>
+                <a href="javascript:void(0)" onclick="openQuiz('archetype')" class="card-link">ПРОЙТИ →</a>
             </div>
-            <div class="card test-card" data-aos="fade-up" data-aos-delay="200" onclick="openQuiz('mindset')">
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="200">
                 <span class="card-num">02</span>
                 <h3>МЫШЛЕНИЕ</h3>
                 <p>Тест на дефицитарные и изобильные паттерны.</p>
-                <span class="card-link">ПРОЙТИ →</span>
+                <a href="javascript:void(0)" onclick="openQuiz('mindset')" class="card-link">ПРОЙТИ →</a>
             </div>
-            <div class="card test-card" data-aos="fade-up" data-aos-delay="300" onclick="openQuiz('visual')">
+            <div class="card test-card" data-aos="zoom-in" data-aos-delay="300">
                 <span class="card-num">03</span>
                 <h3>ВИЗУАЛ</h3>
                 <p>Подходит ли твой стиль под премиум-позиционирование?</p>
-                <span class="card-link">ПРОЙТИ →</span>
+                <a href="javascript:void(0)" onclick="openQuiz('visual')" class="card-link">ПРОЙТИ →</a>
             </div>
         </div>
     </section>
@@ -103,18 +99,25 @@
         </div>
     </section>
 
-    <section id="form" class="footer container">
-        <div class="form-wrapper" data-aos="fade-up">
+    <section id="form" class="footer container" data-aos="fade-up">
+        <div class="form-wrapper">
             <h3>READY FOR <span class="highlight">MORE?</span></h3>
-            <p>СТАТЬ ЧАСТЬЮ СООБЩЕСТВА</p>
-            <form id="womind-form">
-                <input type="text" name="name" id="name" placeholder="ВАШЕ ИМЯ" required>
-                <input type="text" name="contact" id="contact" placeholder="TG / WHATSAPP" required>
-                <textarea name="message" id="message" placeholder="ВАШ ЗАПРОС"></textarea>
+            <p>СТАТЬ ЧАСТЬЮ</p>
+            <form id="google-sheet-form">
+                <input type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
+                <input type="text" name="contact" placeholder="TG / WHATSAPP" required>
+                <textarea name="message" placeholder="ЗАПРОС"></textarea>
                 <button type="submit" id="submit-btn" class="submit-btn">ОТПРАВИТЬ ДАННЫЕ</button>
             </form>
         </div>
     </section>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuiz()">&times;</span>
+            <div id="quiz-content"></div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
