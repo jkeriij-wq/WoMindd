@@ -44,7 +44,7 @@ function closeQuiz() {
 }
 
 // 4. Логика отправки формы
-const scriptURL = 'ТВОЯ_ССЫЛКА_GOOGLE_SCRIPT'; // Вставь сюда ссылку, когда создашь скрипт в таблице
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyGxuAaqowAPbzEpHWXAGY-KSavw3EZOmbl_sXVtxGhJnNw6jolNqGDN9sAIRZzySh4/exec'; // Вставь сюда ссылку, когда создашь скрипт в таблице
 const form = document.getElementById('google-sheet-form');
 
 if (form) {
@@ -55,7 +55,7 @@ if (form) {
         btn.disabled = true;
 
         // Если ссылка не указана, имитируем успех для проверки
-        if (scriptURL === 'ТВОЯ_ССЫЛКА_GOOGLE_SCRIPT') {
+        if (scriptURL === 'https://script.google.com/macros/s/AKfycbyGxuAaqowAPbzEpHWXAGY-KSavw3EZOmbl_sXVtxGhJnNw6jolNqGDN9sAIRZzySh4/exec') {
             setTimeout(() => {
                 alert('Данные приняты (Демо-режим). Настройте Google Sheets URL для реальной работы.');
                 btn.innerText = 'ГОТОВО';
